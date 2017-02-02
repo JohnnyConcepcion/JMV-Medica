@@ -98,3 +98,5 @@ ADD CONSTRAINT FK_Vis_MedicamentoId
 FOREIGN KEY (MedicamentoId)
 REFERENCES Medicamentos (MedicamentoId);
 
+CREATE UNIQUE INDEX IX_Cedula ON Medicos (Cedula);
+CREATE UNIQUE INDEX IX_Cedula ON Pacientes (Cedula);
