@@ -10,9 +10,9 @@ USE JMVMedica;
 CREATE TABLE Ubicaciones(
 	UbicacionId INT PRIMARY KEY IDENTITY(1,1),
 	Descripcion VARCHAR(50) NOT NULL,
-	Estante VARCHAR(10) NOT NULL,
-	Tramo VARCHAR(10) NOT NULL,
-	Celda VARCHAR(10) NOT NULL,
+	Estante VARCHAR(5) NOT NULL,
+	Tramo SMALLINT NOT NULL,
+	Celda SMALLINT NOT NULL,
 	Estado BIT NOT NULL DEFAULT(1)
 );
 
@@ -97,3 +97,4 @@ ALTER TABLE Visitas
 ADD CONSTRAINT FK_Vis_MedicamentoId
 FOREIGN KEY (MedicamentoId)
 REFERENCES Medicamentos (MedicamentoId);
+
