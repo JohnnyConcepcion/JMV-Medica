@@ -15,5 +15,9 @@ namespace JMVMedica.DataAccess.Modelos
         public DateTime FechaVisita { get; set; }
         public string Sintomas { get; set; }
         public string Recomendaciones { get; set; }
+
+        public Medico Medico { get; set; }
+        public Paciente Paciente { get; set; }
+        public Medicamento Medicamento { get; set; }
     }
 }

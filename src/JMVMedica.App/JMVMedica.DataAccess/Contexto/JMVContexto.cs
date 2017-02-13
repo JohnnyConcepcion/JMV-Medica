@@ -47,6 +47,32 @@ namespace JMVMedica.DataAccess.Contexto
             modelBuilder.Entity<Visita>().ToTable("Visitas")
                 .HasKey(x => x.VisitaId);
             #endregion
+
+            #region Foreign keys
+            modelBuilder.Entity<Medicamento>().HasRequired(x => x.Marca)
+                .WithMany(y => y.Medicamentos)
+                .HasForeignKey(z => z.MarcaId);
+
+            modelBuilder.Entity<Medicamento>().HasRequired(x => x.TipoFarmaco)
+                .WithMany(y => y.Medicamentos)
+                .HasForeignKey(z => z.TipoFarmacoId);
+
+            modelBuilder.Entity<Medicamento>().HasRequired(x => x.Ubicacion)
+                .WithMany(y => y.Medicamentos)
+                .HasForeignKey(z => z.UbicacionId);
+
+            modelBuilder.Entity<Visita>().HasRequired(x => x.Medicamento)
+                .WithMany(y => y.Visitas)
+                .HasForeignKey(z => z.MedicamentoId);
+
+            modelBuilder.Entity<Visita>().HasRequired(x => x.Medico)
+                .WithMany(y => y.Visitas)
+                .HasForeignKey(z => z.MedicoId);
+
+            modelBuilder.Entity<Visita>().HasRequired(x => x.Paciente)
+                .WithMany(y => y.Visitas)
+                .HasForeignKey(z => z.PacienteId);
+            #endregion
         }
     }
 }
