@@ -33,6 +33,7 @@
             this.medicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.médicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicamentosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.médicosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,7 +41,6 @@
             this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ubicacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoDeFarmacosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visitasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaVisitaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,26 +65,32 @@
             this.pacientesToolStripMenuItem,
             this.visitasToolStripMenuItem});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // medicamentosToolStripMenuItem
             // 
             this.medicamentosToolStripMenuItem.Name = "medicamentosToolStripMenuItem";
-            this.medicamentosToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.medicamentosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.medicamentosToolStripMenuItem.Text = "Medicamentos";
             // 
             // médicosToolStripMenuItem
             // 
             this.médicosToolStripMenuItem.Name = "médicosToolStripMenuItem";
-            this.médicosToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.médicosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.médicosToolStripMenuItem.Text = "Médicos";
             // 
             // pacientesToolStripMenuItem
             // 
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.pacientesToolStripMenuItem.Text = "Pacientes";
+            // 
+            // visitasToolStripMenuItem
+            // 
+            this.visitasToolStripMenuItem.Name = "visitasToolStripMenuItem";
+            this.visitasToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.visitasToolStripMenuItem.Text = "Visitas";
             // 
             // mantenimientosToolStripMenuItem
             // 
@@ -96,55 +102,50 @@
             this.ubicacionesToolStripMenuItem,
             this.tipoDeFarmacosToolStripMenuItem});
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
-            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
             // 
             // medicamentosToolStripMenuItem1
             // 
             this.medicamentosToolStripMenuItem1.Name = "medicamentosToolStripMenuItem1";
-            this.medicamentosToolStripMenuItem1.Size = new System.Drawing.Size(168, 22);
+            this.medicamentosToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.medicamentosToolStripMenuItem1.Text = "Medicamentos";
             // 
             // médicosToolStripMenuItem1
             // 
             this.médicosToolStripMenuItem1.Name = "médicosToolStripMenuItem1";
-            this.médicosToolStripMenuItem1.Size = new System.Drawing.Size(168, 22);
+            this.médicosToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.médicosToolStripMenuItem1.Text = "Médicos";
             // 
             // pacientesToolStripMenuItem1
             // 
             this.pacientesToolStripMenuItem1.Name = "pacientesToolStripMenuItem1";
-            this.pacientesToolStripMenuItem1.Size = new System.Drawing.Size(168, 22);
+            this.pacientesToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.pacientesToolStripMenuItem1.Text = "Pacientes";
             // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.marcasToolStripMenuItem.Text = "Marcas";
             // 
             // ubicacionesToolStripMenuItem
             // 
             this.ubicacionesToolStripMenuItem.Name = "ubicacionesToolStripMenuItem";
-            this.ubicacionesToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.ubicacionesToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.ubicacionesToolStripMenuItem.Text = "Ubicaciones";
             // 
             // tipoDeFarmacosToolStripMenuItem
             // 
             this.tipoDeFarmacosToolStripMenuItem.Name = "tipoDeFarmacosToolStripMenuItem";
-            this.tipoDeFarmacosToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.tipoDeFarmacosToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.tipoDeFarmacosToolStripMenuItem.Text = "Tipo de Farmacos";
-            // 
-            // visitasToolStripMenuItem
-            // 
-            this.visitasToolStripMenuItem.Name = "visitasToolStripMenuItem";
-            this.visitasToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.visitasToolStripMenuItem.Text = "Visitas";
+            this.tipoDeFarmacosToolStripMenuItem.Click += new System.EventHandler(this.tipoDeFarmacosToolStripMenuItem_Click);
             // 
             // nuevaVisitaToolStripMenuItem
             // 
             this.nuevaVisitaToolStripMenuItem.Name = "nuevaVisitaToolStripMenuItem";
-            this.nuevaVisitaToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.nuevaVisitaToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.nuevaVisitaToolStripMenuItem.Text = "Nueva Visita";
             // 
             // FrmPrincipal
@@ -157,6 +158,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
             this.Text = "JMV-Medica";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
