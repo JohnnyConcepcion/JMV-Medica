@@ -58,6 +58,12 @@
     <Compile Include="Formularios\FrmMedicamentos.Designer.cs">
       <DependentUpon>FrmMedicamentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMedicos.Designer.cs">
+      <DependentUpon>FrmMedicos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmMedicamentos.resx">
       <DependentUpon>FrmMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMedicos.resx">
+      <DependentUpon>FrmMedicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
