@@ -29,8 +29,12 @@ namespace JMVMedica.App.Formularios
 
         private void Cargar()
         {
-            var tipoFarmacos = this.dispensario.CargarTipoFarmacos();
-            dgvTipoFarmacos.DataSource = tipoFarmacos;
+            var tipoFarmacos = this.dispensario.CargarTipoFarmacos()
+                .Select(x => new {
+                    TipoFarmacoId = x.TipoFarmacoId,
+                    Descripcion = x.Descripcion
+                });
+            dgvTipoFarmacos.DataSource = tipoFarmacos.ToArray();
             dgvTipoFarmacos.Refresh();
         }
 

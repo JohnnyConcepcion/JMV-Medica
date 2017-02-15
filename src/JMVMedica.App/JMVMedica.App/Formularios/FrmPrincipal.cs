@@ -23,5 +23,12 @@ namespace JMVMedica.App.Formularios
             frmTipoFarmaco.MdiParent = this;
             frmTipoFarmaco.Show();
         }
+
+        private void medicamentosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmMedicamentos frmMedicamento = new FrmMedicamentos();
+            frmMedicamento.MdiParent = this;
+            frmMedicamento.Show();
+        }
     }
 }
